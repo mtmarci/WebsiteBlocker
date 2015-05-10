@@ -1,0 +1,42 @@
+{
+  "manifest_version": 2,
+  "name": "Website blocker",
+  "version": "1.0",
+
+  "default_locale": "en",
+  "description": "This website blocker helps you focus on your tasks",
+  "icons": {
+    "16":"16.png",
+    "48": "48.png",
+    "128":"128.png"
+  },
+
+  "browser_action": {
+    "default_icon": {                    
+            "19": "images/icon19.png",           
+            "38": "images/icon38.png"            
+          },
+          "default_title": "Manage blocked websites",      
+          "default_popup": "popup.html"        
+  },
+  
+
+  "author": "Group 411 - MED4 2015",
+  "background": {
+    "scripts": ["background.js"],
+    "persistent": false
+  },
+  
+  "commands": {},
+  "incognito": "split",
+  "offline_enabled": true,
+  "optional_permissions": ["tabs"],
+  "options_page": "options.html",
+  "options_ui": {
+    "chrome_style": true,
+    "page": "options.html"
+  },
+  "permissions": ["tabs"],
+  "short_name": "WB"
+ 
+}
